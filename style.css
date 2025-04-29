@@ -1,0 +1,77 @@
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15px;
+    font-size: 40px;
+}
+.botao{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(230, 230, 230, 0.836);
+    font-weight: bold;
+    transition: background-color 0.3s;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+.button{
+    display: inline-block;
+    background-color: rgba(240, 239, 239, 0.836);
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+.imagem{
+    width: 70px;
+    margin-top: 15px;
+}
+.flex{
+    display: flex;
+}
+    
+.retangulo{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(233, 219, 247);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    font-size: 23px;
+}
+.botaomenor{
+    display: inline-block;
+    background-color: rgba(240, 238, 238, 0.781);
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.carroabrindo{
+    width: 160px;
+    height: 200px;
+    margin-left: 100px;
+}
