@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Friends Ride</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🚘 Uber Friends Ride</h1>
+<div class="friends">
+  <label for="destination">Destino principal:</label>
+  <input type="text" id="destination" placeholder="Digite o local de destino..." />
+<br>
+  <label for="friendName">Adicionar amigo à carona:</label>
+  <input type="text" id="friendName" placeholder="Nome do amigo" />
+  <button onclick="addFriend()">Adicionar amigo</button>
+
+  <div class="friends-list" id="friendsList"></div>
+
+  <button onclick="calculateRide()">Calcular rota e dividir custo</button>
+
+  <div class="summary" id="summary" style="display: none;">
+    <p>Destino: <span id="destOutput"></span></p>
+    <p>Passageiros: <span id="passengersOutput"></span></p>
+    <p class="cost">Custo por pessoa: R$ <span id="costOutput"></span></p>
+  </div>
+</div>
+  <script>
+    const friends = [];
+
+    function addFriend() {
+      const nameInput = document.getElementById("friendName");
+      const name = nameInput.value.trim();
+
+      if (name) {
+        friends.push(name);
+        const list = document.getElementById("friendsList");
+        const item = document.createElement("div");
+        item.className = "friend";
+        item.textContent = "👤 " + name;
+        list.appendChild(item);
+        nameInput.value = "";
+      }
+    }
+
+    function calculateRide() {
+      const destination = document.getElementById("destination").value.trim();
+      const summary = document.getElementById("summary");
+      const destOutput = document.getElementById("destOutput");
+      const passengersOutput = document.getElementById("passengersOutput");
+      const costOutput = document.getElementById("costOutput");
+
+      if (!destination) {
+        alert("Informe o destino principal.");
+        return;
+      }
+
+      const totalPeople = friends.length + 1; // +1 para o usuário principal
+      const totalCost = 30.00; // valor simulado
+      const perPerson = (totalCost / totalPeople).toFixed(2);
+
+      destOutput.textContent = destination;
+      passengersOutput.textContent = totalPeople + " pessoas";
+      costOutput.textContent = perPerson;
+
+      summary.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>

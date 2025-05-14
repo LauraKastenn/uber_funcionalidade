@@ -5,13 +5,13 @@ h1{
 }
 .botao{
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
     background-color: rgba(230, 230, 230, 0.836);
     font-weight: bold;
-    transition: background-color 0.3s;
     justify-content: center;
     align-items: center;
     border-radius: 100px;
+    width: 3000px;
 }
 .button{
     display: inline-block;
@@ -58,24 +58,160 @@ h3{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    width: 200px;
+    width: 500px;
     height: 30px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     text-decoration: none;
     text-align: center;
-    margin: 10px;
+    margin: 05px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin-left: 30px;
 }
 
 .carroabrindo{
-    width: 160px;
-    height: 200px;
-    margin-left: 100px;
+    width: 140px;
+    height: 180px;
+    
+    
 }
 .p1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 200px;
+    margin-top: 0px;
     font-size: 23px;
     display: flexbox;
+    padding: 15px;
 }
+
+    .cta-text {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .cta-button {
+      background-color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .cta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f2eaff;
+      padding: 20px;
+      border-radius: 16px;
+    }
+
+
+  :root {
+      --primary: #000000;
+      --accent: #5c33ff;
+      --bg: #f9f9f9;
+      --card: #ffffff;
+      --border: #e0e0e0;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: #333;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: var(--card);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+  
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    input:focus {
+      border-color: var(--accent);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(92, 51, 255, 0.15);
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: var(--primary);
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 14px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #222;
+    }
+
+    .friends-list {
+      margin-top: 12px;
+      padding-left: 10px;
+    }
+
+    .friend {
+      margin: 6px 0;
+      padding: 6px 12px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .summary {
+      background-color: #f3efff;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 16px;
+      border-left: 6px solid var(--accent);
+      box-shadow: var(--shadow);
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    .cost {
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--accent);
+      margin-top: 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
